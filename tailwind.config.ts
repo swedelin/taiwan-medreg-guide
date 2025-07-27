@@ -24,6 +24,9 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				'medical-blue': 'hsl(var(--medical-blue))',
+				'medical-teal': 'hsl(var(--medical-teal))',
+				'section-bg': 'hsl(var(--section-bg))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -67,6 +70,13 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'medical-gradient': 'var(--medical-gradient)',
+				'hero-gradient': 'var(--hero-gradient)',
+			},
+			boxShadow: {
+				'medical': 'var(--shadow-medical)',
 			},
 			keyframes: {
 				'accordion-down': {
