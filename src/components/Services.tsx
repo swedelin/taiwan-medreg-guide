@@ -59,11 +59,11 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            Medical Device Registration Services
+            Our Proven Track Record
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We specialize in navigating Taiwan's regulatory landscape for diverse medical device categories, 
-            ensuring compliant and efficient registration processes.
+            Examples of successful medical device registrations we've completed in Taiwan. 
+            We can handle any medical device category - these represent just some of our recent projects.
           </p>
         </div>
         
