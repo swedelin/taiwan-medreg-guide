@@ -14,12 +14,11 @@ const Hero = () => {
         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
           Taiwan Medical Device
           <br />
-          <span className="text-medical-teal">Registration Expert</span>
+          <span className="text-medical-teal">Registration Service</span>
         </h1>
         
         <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-          Professional regulatory consulting for medical device registration in Taiwan. 
-          From imaging systems to surgical instruments - we navigate the complex approval process for you.
+          Professional regulatory consulting for medical device registration in Taiwan.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -5,9 +5,6 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-medical-gradient rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-lg">TMR</span>
-          </div>
           <div>
             <h1 className="text-xl font-bold text-foreground">Regiestar</h1>
             <p className="text-xs text-muted-foreground">Medical Device Registration</p>

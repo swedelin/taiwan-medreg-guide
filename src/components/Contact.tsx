@@ -86,7 +86,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Email</p>
-                    <p className="text-muted-foreground">info@regiestar.com</p>
+                    <p className="text-muted-foreground">sylin@regiestar.com</p>
                   </div>
                 </div>
               </CardContent>
@@ -96,11 +96,9 @@ const Contact = () => {
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold mb-4">Why Choose Us?</h3>
                 <ul className="space-y-3 text-white/90">
-                  <li>✓ 5+ years Taiwan regulatory experience</li>
                   <li>✓ Expert knowledge of FDA Taiwan requirements</li>
                   <li>✓ Proven track record across device categories</li>
                   <li>✓ Personalized support throughout the process</li>
-                  
                 </ul>
               </CardContent>
             </Card>
