@@ -32,10 +32,6 @@ const Process = () => {
           <h2 className="text-4xl font-bold text-foreground mb-6">
             Our Registration Process
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A streamlined, proven approach to medical device registration in Taiwan, 
-            designed to minimize time-to-market while ensuring full regulatory compliance.
-          </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

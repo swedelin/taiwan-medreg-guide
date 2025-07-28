@@ -21,6 +21,9 @@ const Header = () => {
           <a href="#contact" className="text-foreground hover:text-medical-blue transition-colors">
             Contact
           </a>
+          <a href="https://www.linkedin.com/company/regiestar/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-medical-blue transition-colors">
+            LinkedIn
+          </a>
           <Button variant="medical" size="sm">
             Free Consultation
           </Button>
