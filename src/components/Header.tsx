@@ -9,7 +9,7 @@ const Header = () => {
             <span className="text-white font-bold text-lg">TMR</span>
           </div>
           <div>
-            <h1 className="text-xl font-bold text-foreground">Taiwan MedReg</h1>
+            <h1 className="text-xl font-bold text-foreground">Regiestar</h1>
             <p className="text-xs text-muted-foreground">Medical Device Registration</p>
           </div>
         </div>

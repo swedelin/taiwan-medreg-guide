@@ -31,20 +31,6 @@ const Hero = () => {
           </Button>
         </div>
         
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-            <div className="text-3xl font-bold text-medical-teal mb-2">50+</div>
-            <p className="text-white/80">Successful Registrations</p>
-          </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-            <div className="text-3xl font-bold text-medical-teal mb-2">8+</div>
-            <p className="text-white/80">Device Categories</p>
-          </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-            <div className="text-3xl font-bold text-medical-teal mb-2">95%</div>
-            <p className="text-white/80">Approval Success Rate</p>
-          </div>
-        </div>
       </div>
     </section>
   );

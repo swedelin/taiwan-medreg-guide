@@ -13,43 +13,35 @@ import {
 const services = [
   {
     icon: Monitor,
-    title: "Medical Imaging Devices",
-    description: "X-ray systems, MRI, CT scanners, ultrasound equipment and other diagnostic imaging devices"
+    title: "Medical Imaging Devices"
   },
   {
     icon: Cpu,
-    title: "AI/Software Solutions",
-    description: "Computer-aided detection software, diagnostic algorithms, and AI-powered medical applications"
+    title: "AI/Software Solutions"
   },
   {
     icon: Stethoscope,
-    title: "Drug Eluting Catheters",
-    description: "Interventional cardiology devices, balloon catheters, and drug-delivery systems"
+    title: "Drug Eluting Catheters"
   },
   {
     icon: Zap,
-    title: "Muscle Stimulators",
-    description: "Electrical stimulation devices, TENS units, and rehabilitation equipment"
+    title: "Muscle Stimulators"
   },
   {
     icon: Wind,
-    title: "Olfactory Testing",
-    description: "Smell and taste assessment devices, sensory evaluation equipment"
+    title: "Olfactory Testing"
   },
   {
     icon: Eye,
-    title: "Tear Testing",
-    description: "Dry eye diagnostic tools, tear film analysis devices, and ophthalmology equipment"
+    title: "Tear Testing"
   },
   {
     icon: Search,
-    title: "Caries Detection",
-    description: "Dental diagnostic equipment, cavity detection systems, and oral health devices"
+    title: "Caries Detection"
   },
   {
     icon: Scissors,
-    title: "Surgical Instruments",
-    description: "Operating room tools, minimally invasive devices, and specialized surgical equipment"
+    title: "Surgical Instruments"
   }
 ];
 
@@ -62,8 +54,7 @@ const Services = () => {
             Our Proven Track Record
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Examples of successful medical device registrations we've completed in Taiwan. 
-            We can handle any medical device category - these represent just some of our recent projects.
+            Examples of successful medical device registrations we've completed in Taiwan.
           </p>
         </div>
         
@@ -78,11 +69,6 @@ const Services = () => {
                   </div>
                   <CardTitle className="text-lg text-foreground">{service.title}</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-center text-muted-foreground">
-                    {service.description}
-                  </CardDescription>
-                </CardContent>
               </Card>
             );
           })}

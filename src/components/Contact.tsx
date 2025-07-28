@@ -82,41 +82,11 @@ const Contact = () => {
               <CardContent className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-medical-gradient rounded-full flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Phone</p>
-                    <p className="text-muted-foreground">+886-2-XXXX-XXXX</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-medical-gradient rounded-full flex items-center justify-center">
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Email</p>
-                    <p className="text-muted-foreground">info@taiwan-medreg.com</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-medical-gradient rounded-full flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Location</p>
-                    <p className="text-muted-foreground">Taipei, Taiwan</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-medical-gradient rounded-full flex items-center justify-center">
-                    <Clock className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Business Hours</p>
-                    <p className="text-muted-foreground">Mon-Fri: 9:00 AM - 6:00 PM</p>
+                    <p className="text-muted-foreground">info@regiestar.com</p>
                   </div>
                 </div>
               </CardContent>
@@ -130,7 +100,7 @@ const Contact = () => {
                   <li>✓ Expert knowledge of FDA Taiwan requirements</li>
                   <li>✓ Proven track record across device categories</li>
                   <li>✓ Personalized support throughout the process</li>
-                  <li>✓ Competitive pricing and transparent fees</li>
+                  
                 </ul>
               </CardContent>
             </Card>
