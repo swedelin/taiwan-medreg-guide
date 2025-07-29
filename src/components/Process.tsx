@@ -1,36 +1,40 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { CheckCircle, FileText, Search, Users } from "lucide-react";
 
-const processSteps = [
+const getProcessSteps = (t: (key: string) => string) => [
   {
     icon: Search,
-    title: "Initial Assessment",
-    description: "We analyze your device specifications, intended use, and determine the appropriate regulatory pathway for Taiwan market entry."
+    title: t('processStep1Title'),
+    description: t('processStep1Description')
   },
   {
     icon: FileText,
-    title: "Documentation Preparation", 
-    description: "Our team prepares comprehensive technical files, clinical data, and regulatory submissions according to Taiwan FDA requirements."
+    title: t('processStep2Title'), 
+    description: t('processStep2Description')
   },
   {
     icon: Users,
-    title: "Regulatory Submission",
-    description: "We handle all communications with Taiwan FDA, manage the review process, and address any regulatory queries or requests."
+    title: t('processStep3Title'),
+    description: t('processStep3Description')
   },
   {
     icon: CheckCircle,
-    title: "Approval & Launch",
-    description: "Upon approval, we assist with post-market requirements, quality system maintenance, and ongoing regulatory compliance."
+    title: t('processStep4Title'),
+    description: t('processStep4Description')
   }
 ];
 
 const Process = () => {
+  const { t } = useLanguage();
+  const processSteps = getProcessSteps(t);
+
   return (
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            Our Registration Process
+            {t('processTitle')}
           </h2>
         </div>
         

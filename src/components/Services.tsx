@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { 
   Monitor, 
   Cpu, 
@@ -10,51 +11,54 @@ import {
   Scissors 
 } from "lucide-react";
 
-const services = [
+const getServices = (t: (key: string) => string) => [
   {
     icon: Monitor,
-    title: "Medical Imaging Devices"
+    title: t('service1')
   },
   {
     icon: Cpu,
-    title: "AI/Software Solutions"
+    title: t('service2')
   },
   {
     icon: Stethoscope,
-    title: "Drug Eluting Catheters"
+    title: t('service3')
   },
   {
     icon: Zap,
-    title: "Muscle Stimulators"
+    title: t('service4')
   },
   {
     icon: Wind,
-    title: "Olfactory Testing"
+    title: t('service5')
   },
   {
     icon: Eye,
-    title: "Tear Testing"
+    title: t('service6')
   },
   {
     icon: Search,
-    title: "Caries Detection"
+    title: t('service7')
   },
   {
     icon: Scissors,
-    title: "Surgical Instruments"
+    title: t('service8')
   }
 ];
 
 const Services = () => {
+  const { t } = useLanguage();
+  const services = getServices(t);
+
   return (
     <section className="py-20 bg-section-bg">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            Our Proven Track Record
+            {t('servicesTitle')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Examples of successful medical device registrations we've completed in Taiwan.
+            {t('servicesDescription')}
           </p>
         </div>
         

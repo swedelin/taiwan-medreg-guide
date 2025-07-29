@@ -3,19 +3,21 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Contact = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-20 bg-section-bg">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            Ready to Register Your Medical Device?
+            {t('contactTitle')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Get expert guidance for your Taiwan medical device registration. 
-            Contact us for a free consultation and personalized regulatory strategy.
+            {t('contactDescription')}
           </p>
         </div>
         
@@ -23,49 +25,44 @@ const Contact = () => {
           {/* Contact Form */}
           <Card className="border-2 border-medical-blue/20">
             <CardHeader>
-              <CardTitle className="text-2xl text-foreground">Get Free Consultation</CardTitle>
+              <CardTitle className="text-2xl text-foreground">{t('contactTitle')}</CardTitle>
               <CardDescription>
-                Tell us about your medical device and we'll provide a tailored registration strategy.
+                {t('contactDescription')}
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="firstName">First Name</Label>
-                  <Input id="firstName" placeholder="John" />
+                  <Label htmlFor="firstName">{t('contactName')}</Label>
+                  <Input id="firstName" placeholder={t('contactName')} />
                 </div>
                 <div>
-                  <Label htmlFor="lastName">Last Name</Label>
-                  <Input id="lastName" placeholder="Smith" />
+                  <Label htmlFor="lastName">{t('contactCompany')}</Label>
+                  <Input id="lastName" placeholder={t('contactCompany')} />
                 </div>
               </div>
               
               <div>
-                <Label htmlFor="company">Company</Label>
-                <Input id="company" placeholder="Your Company Name" />
+                <Label htmlFor="email">{t('contactEmail')}</Label>
+                <Input id="email" type="email" placeholder="your.email@company.com" />
               </div>
               
               <div>
-                <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="john@company.com" />
+                <Label htmlFor="deviceType">{t('contactDeviceType')}</Label>
+                <Input id="deviceType" placeholder={t('contactDeviceType')} />
               </div>
               
               <div>
-                <Label htmlFor="deviceType">Device Type</Label>
-                <Input id="deviceType" placeholder="e.g., Medical Imaging Device, AI Software" />
-              </div>
-              
-              <div>
-                <Label htmlFor="message">Project Details</Label>
+                <Label htmlFor="message">{t('contactDetails')}</Label>
                 <Textarea 
                   id="message" 
-                  placeholder="Tell us about your medical device, timeline, and specific requirements..."
+                  placeholder={t('contactDetails')}
                   className="min-h-[120px]"
                 />
               </div>
               
               <Button variant="medical" className="w-full" size="lg">
-                Request Free Consultation
+                {t('contactSubmit')}
               </Button>
             </CardContent>
           </Card>
@@ -74,9 +71,9 @@ const Contact = () => {
           <div className="space-y-8">
             <Card className="border-2 border-medical-blue/20">
               <CardHeader>
-                <CardTitle className="text-2xl text-foreground">Contact Information</CardTitle>
+                <CardTitle className="text-2xl text-foreground">{t('contactInfoTitle')}</CardTitle>
                 <CardDescription>
-                  Reach out to us directly for immediate assistance.
+                  {t('contactDescription')}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -85,7 +82,7 @@ const Contact = () => {
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">Email</p>
+                    <p className="font-semibold text-foreground">{t('contactInfoEmail')}</p>
                     <p className="text-muted-foreground">sylin@regiestar.com</p>
                   </div>
                 </div>
@@ -94,11 +91,12 @@ const Contact = () => {
             
             <Card className="bg-medical-gradient text-white border-none">
               <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-4">Why Choose Us?</h3>
+                <h3 className="text-2xl font-bold mb-4">{t('whyChooseTitle')}</h3>
                 <ul className="space-y-3 text-white/90">
-                  <li>✓ Expert knowledge of FDA Taiwan requirements</li>
-                  <li>✓ Proven track record across device categories</li>
-                  <li>✓ Personalized support throughout the process</li>
+                  <li>✓ {t('whyChoose1')}</li>
+                  <li>✓ {t('whyChoose2')}</li>
+                  <li>✓ {t('whyChoose3')}</li>
+                  <li>✓ {t('whyChoose4')}</li>
                 </ul>
               </CardContent>
             </Card>
