@@ -89,17 +89,6 @@ const Contact = () => {
               </CardContent>
             </Card>
             
-            <Card className="bg-medical-gradient text-white border-none">
-              <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-4">{t('whyChooseTitle')}</h3>
-                <ul className="space-y-3 text-white/90">
-                  <li>✓ {t('whyChoose1')}</li>
-                  <li>✓ {t('whyChoose2')}</li>
-                  <li>✓ {t('whyChoose3')}</li>
-                  <li>✓ {t('whyChoose4')}</li>
-                </ul>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
