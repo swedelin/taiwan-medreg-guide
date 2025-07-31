@@ -21,75 +21,34 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <Card className="border-2 border-medical-blue/20">
-            <CardHeader>
-              <CardTitle className="text-2xl text-foreground">{t('contactTitle')}</CardTitle>
-              <CardDescription>
+        <div className="flex justify-center">
+          <Card className="border-2 border-medical-blue/20 max-w-2xl w-full">
+            <CardHeader className="text-center">
+              <CardTitle className="text-3xl text-foreground">{t('contactTitle')}</CardTitle>
+              <CardDescription className="text-lg">
                 {t('contactDescription')}
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <Label htmlFor="firstName">{t('contactName')}</Label>
-                  <Input id="firstName" placeholder={t('contactName')} />
+            <CardContent className="space-y-8">
+              <div className="flex items-center justify-center space-x-4">
+                <div className="w-16 h-16 bg-medical-gradient rounded-full flex items-center justify-center">
+                  <Mail className="w-8 h-8 text-white" />
                 </div>
-                <div>
-                  <Label htmlFor="lastName">{t('contactCompany')}</Label>
-                  <Input id="lastName" placeholder={t('contactCompany')} />
+                <div className="text-center">
+                  <p className="font-semibold text-foreground text-lg">{t('contactInfoEmail')}</p>
+                  <p className="text-muted-foreground text-lg">sylin@regiestar.com</p>
                 </div>
               </div>
               
-              <div>
-                <Label htmlFor="email">{t('contactEmail')}</Label>
-                <Input id="email" type="email" placeholder="your.email@company.com" />
+              <div className="text-center">
+                <Button variant="medical" size="lg" asChild>
+                  <a href="mailto:sylin@regiestar.com">
+                    {t('contactSubmit')}
+                  </a>
+                </Button>
               </div>
-              
-              <div>
-                <Label htmlFor="deviceType">{t('contactDeviceType')}</Label>
-                <Input id="deviceType" placeholder={t('contactDeviceType')} />
-              </div>
-              
-              <div>
-                <Label htmlFor="message">{t('contactDetails')}</Label>
-                <Textarea 
-                  id="message" 
-                  placeholder={t('contactDetails')}
-                  className="min-h-[120px]"
-                />
-              </div>
-              
-              <Button variant="medical" className="w-full" size="lg">
-                {t('contactSubmit')}
-              </Button>
             </CardContent>
           </Card>
-          
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <Card className="border-2 border-medical-blue/20">
-              <CardHeader>
-                <CardTitle className="text-2xl text-foreground">{t('contactInfoTitle')}</CardTitle>
-                <CardDescription>
-                  {t('contactDescription')}
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-medical-gradient rounded-full flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">{t('contactInfoEmail')}</p>
-                    <p className="text-muted-foreground">sylin@regiestar.com</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-            
-          </div>
         </div>
       </div>
     </section>
