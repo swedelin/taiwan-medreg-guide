@@ -37,13 +37,6 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="text-center">
-                <Button variant="medical" size="lg" asChild>
-                  <a href="mailto:sylin@regiestar.com">
-                    {t('contactSubmit')}
-                  </a>
-                </Button>
-              </div>
             </CardContent>
           </Card>
         </div>
