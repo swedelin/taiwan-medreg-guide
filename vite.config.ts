@@ -19,5 +19,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/taiwan-medreg-guide/",   // ✅ 這行是關鍵，repo 名稱要完全正確
+  base: "/",
 }));
