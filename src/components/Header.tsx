@@ -31,14 +31,8 @@ const Header = () => {
             <a href="https://www.linkedin.com/company/regiestar/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-medical-blue transition-colors">
               {t('linkedin')}
             </a>
-            <Button variant="medical" size="sm">
-              {t('freeConsultation')}
-            </Button>
           </nav>
           
-          <Button variant="medical" size="sm" className="md:hidden">
-            {t('menu')}
-          </Button>
         </div>
       </div>
     </header>
