@@ -20,13 +20,7 @@ const Contact = () => {
         
         <div className="flex justify-center">
           <Card className="border-2 border-medical-blue/20 max-w-2xl w-full">
-            <CardHeader className="text-center">
-              <CardTitle className="text-3xl text-foreground">{t('contactTitle')}</CardTitle>
-              <CardDescription className="text-lg">
-                {t('contactDescription')}
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-8">
+            <CardContent className="space-y-8 pt-8">
               <div className="flex items-center justify-center space-x-4">
                 <div className="w-16 h-16 bg-medical-gradient rounded-full flex items-center justify-center">
                   <Mail className="w-8 h-8 text-white" />
