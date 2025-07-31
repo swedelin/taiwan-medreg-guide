@@ -25,9 +25,6 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="medical" size="lg" className="text-lg px-8 py-4">
-            {t('heroButton1')}
-          </Button>
           <Button variant="medical-outline" size="lg" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-medical-blue">
             {t('heroButton2')}
           </Button>
