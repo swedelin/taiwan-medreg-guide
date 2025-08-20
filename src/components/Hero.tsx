@@ -24,11 +24,6 @@ const Hero = () => {
           {t('heroDescription')}
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="medical-outline" size="lg" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-medical-blue">
-            {t('heroButton2')}
-          </Button>
-        </div>
         
       </div>
     </section>
