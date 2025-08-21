@@ -30,6 +30,14 @@ const LanguageToggle = () => {
       >
         English
       </Button>
+      <Button
+        variant="ghost"
+        size="sm"
+        onClick={() => window.location.href = '/en/'}
+        className="text-xs px-3 py-1 h-7 text-foreground hover:text-medical-blue bg-transparent ml-2"
+      >
+        EN Site →
+      </Button>
     </div>
   );
 };
