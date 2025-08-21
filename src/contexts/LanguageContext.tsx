@@ -66,6 +66,13 @@ const translations = {
     whyChoose2: 'TFDAとの確立されたパートナーシップ',
     whyChoose3: '高い成功率と迅速な承認実績',
     whyChoose4: '登録から市場投入までの包括的サポート',
+    
+    // FAQ
+    faqTitle: '台湾における医療機器登録に関するFAQ',
+    faqQ1: '台湾で医療機器を販売するには、どのような手続きが必要ですか？',
+    faqA1: '台湾市場で医療機器を販売するには、台湾食品薬物管理署（TFDA）に対して製造販売承認を申請する必要があります。特に高リスクに分類される医療機器については、技術資料、試験データ、臨床データなどの追加提出が求められる場合があります。また、海外製造業者は台湾国内に現地代理人（Taiwan Agent）を指定しなければなりません。現地代理人は、医療機器の登録手続きを管理し、TFDAとの連絡窓口としての役割を担います。',
+    faqQ2: 'QSDとは何ですか？',
+    faqA2: 'QSDは「輸入医療機器品質システム文書（Quality System Documentation）」の略称です。これは、台湾に輸入される医療機器に対して、外国の製造業者が実施している品質管理体制が台湾のGMP（適正製造基準）に適合しているかどうかを、文書に基づいて審査する制度です。QSDは、台湾政府が輸入医療機器の品質を確保するために設けている審査プロセスの一つであり、登録時に必要な重要な要件となっています。',
   },
   en: {
     // Header
@@ -124,6 +131,13 @@ const translations = {
     whyChoose2: 'Established partnerships with TFDA',
     whyChoose3: 'High success rate and proven track record of fast approvals',
     whyChoose4: 'Comprehensive support from registration to market launch',
+    
+    // FAQ
+    faqTitle: 'FAQ about Medical Device Registration in Taiwan',
+    faqQ1: 'What procedures are required to sell medical devices in Taiwan?',
+    faqA1: 'To sell medical devices in the Taiwan market, you must apply for manufacturing and marketing approval from the Taiwan Food and Drug Administration (TFDA). For medical devices classified as high-risk, additional submissions such as technical documentation, test data, and clinical data may be required. Foreign manufacturers must also designate a Taiwan Agent within Taiwan. The Taiwan Agent manages the medical device registration procedures and serves as the liaison with TFDA.',
+    faqQ2: 'What is QSD?',
+    faqA2: 'QSD stands for "Quality System Documentation for Imported Medical Devices." This is a system that reviews, based on documentation, whether the quality management system implemented by foreign manufacturers for medical devices imported into Taiwan complies with Taiwan\'s GMP (Good Manufacturing Practice) standards. QSD is one of the review processes established by the Taiwan government to ensure the quality of imported medical devices and is an important requirement during registration.',
   }
 };
 
