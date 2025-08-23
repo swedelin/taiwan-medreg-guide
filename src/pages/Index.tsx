@@ -9,19 +9,21 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <Hero />
-      <div id="services">
-        <Services />
-      </div>
-      <div id="process">
-        <Process />
-      </div>
-      <div id="faq">
-        <FAQ />
-      </div>
-      <div id="contact">
-        <Contact />
-      </div>
+      <main>
+        <Hero />
+        <section id="services" aria-labelledby="services-heading">
+          <Services />
+        </section>
+        <section id="process" aria-labelledby="process-heading">
+          <Process />
+        </section>
+        <section id="faq" aria-labelledby="faq-heading">
+          <FAQ />
+        </section>
+        <section id="contact" aria-labelledby="contact-heading">
+          <Contact />
+        </section>
+      </main>
     </div>
   );
 };

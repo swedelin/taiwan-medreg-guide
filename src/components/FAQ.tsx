@@ -9,7 +9,7 @@ const FAQ = () => {
     <section className="py-20 bg-background">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-6">
+          <h2 id="faq-heading" className="text-4xl font-bold text-foreground mb-6">
             {t('faqTitle')}
           </h2>
         </div>

@@ -11,6 +11,8 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
         style={{ backgroundImage: `url(${heroImage})` }}
+        role="img"
+        aria-label="台湾の医療機器登録を支援する専門的なサービスを表現した医療機器の背景画像"
       ></div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
