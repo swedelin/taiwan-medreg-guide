@@ -17,6 +17,33 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "台湾で医療機器を販売するには、どのような手続きが必要ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "台湾市場で医療機器を販売するには、台湾食品薬物管理署（TFDA）に対して製造販売承認を申請する必要があります。特に高リスクに分類される医療機器については、技術資料、試験データ、臨床データなどの追加提出が求められる場合があります。また、海外製造業者は台湾国内に現地代理人（Taiwan Agent）を指定しなければなりません。現地代理人は、医療機器の登録手続きを管理し、TFDAとの連絡窓口としての役割を担います。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "QSDとは何ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "QSDは「輸入医療機器品質システム文書（Quality System Documentation）」の略称です。これは、台湾に輸入される医療機器に対して、外国の製造業者が実施している品質管理体制が台湾のGMP（適正製造基準）に適合しているかどうかを、文書に基づいて審査する制度です。QSDは、台湾政府が輸入医療機器の品質を確保するために設けている審査プロセスの一つであり、登録時に必要な重要な要件となっています。"
+          }
+        }
+      ]
+    }
+    </script>
+
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SD3505582K"></script>
 <script>
@@ -30,6 +57,26 @@
 
   <body>
     <div id="root"></div>
+    
+    <!-- Static FAQ for SEO -->
+    <section itemScope itemType="https://schema.org/FAQPage" style="display: none;">
+      <div>
+        <section itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+          <h3 itemProp="name">台湾で医療機器を販売するには、どのような手続きが必要ですか？</h3>
+          <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
+            <p itemProp="text">台湾市場で医療機器を販売するには、台湾食品薬物管理署（TFDA）に対して製造販売承認を申請する必要があります。特に高リスクに分類される医療機器については、技術資料、試験データ、臨床データなどの追加提出が求められる場合があります。また、海外製造業者は台湾国内に現地代理人（Taiwan Agent）を指定しなければなりません。現地代理人は、医療機器の登録手続きを管理し、TFDAとの連絡窓口としての役割を担います。</p>
+          </div>
+        </section>
+
+        <section itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+          <h3 itemProp="name">QSDとは何ですか？</h3>
+          <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
+            <p itemProp="text">QSDは「輸入医療機器品質システム文書（Quality System Documentation）」の略称です。これは、台湾に輸入される医療機器に対して、外国の製造業者が実施している品質管理体制が台湾のGMP（適正製造基準）に適合しているかどうかを、文書に基づいて審査する制度です。QSDは、台湾政府が輸入医療機器の品質を確保するために設けている審査プロセスの一つであり、登録時に必要な重要な要件となっています。</p>
+          </div>
+        </section>
+      </div>
+    </section>
+    
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
