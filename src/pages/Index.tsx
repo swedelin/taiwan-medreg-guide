@@ -13,8 +13,8 @@ const Index = () => {
   const { setLanguage } = useLanguage();
 
   useEffect(() => {
-    // Set language based on route
-    if (location.pathname === '/en') {
+    // Set language based on route (handle both /en and /en/)
+    if (location.pathname.startsWith('/en')) {
       setLanguage('en');
     } else {
       setLanguage('ja');
