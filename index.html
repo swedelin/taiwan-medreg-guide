@@ -11,7 +11,7 @@
     <meta name="keywords" content="台湾医療機器登録,TFDA申請,医療機器薬事,台湾FDA,QSD申請,医療機器コンサルティング,薬事申請,台湾市場参入,医療機器承認,規制コンサルティング,Taiwan Agent,医療機器GMP" />
     <meta name="author" content="Regiestar" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <link rel="canonical" href="https://regiestar.net/" />
+    <link rel="canonical" href="https://regiestar.net/" id="canonical-link" />
     
     <!-- Language Tags -->
     <link rel="alternate" hreflang="ja" href="https://regiestar.net/" />
@@ -215,5 +215,25 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     
+    <!-- Dynamic canonical URL script -->
+    <script>
+      // Update canonical URL based on current path
+      function updateCanonical() {
+        const canonicalLink = document.getElementById('canonical-link');
+        const currentPath = window.location.pathname;
+        
+        if (currentPath.startsWith('/en')) {
+          canonicalLink.href = 'https://regiestar.net/en';
+        } else {
+          canonicalLink.href = 'https://regiestar.net/';
+        }
+      }
+      
+      // Update canonical on page load
+      updateCanonical();
+      
+      // Update canonical when URL changes (for SPA navigation)
+      window.addEventListener('popstate', updateCanonical);
+    </script>
   </body>
 </html>
