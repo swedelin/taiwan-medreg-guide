@@ -12,3 +12,10 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Sitemaps
+Sitemap: https://regiestar.net/sitemap.xml
+
+# Specific language pages
+Allow: /en
+Allow: /en/

@@ -7,26 +7,29 @@ const __dirname = path.dirname(__filename);
 
 const distDir = path.resolve(__dirname, '../dist');
 
-// After Vite builds, rename the generated files
-console.log('Renaming language-specific HTML files...');
+// After Vite builds, ensure the correct files are in place for Netlify
+console.log('Setting up language-specific HTML files for Netlify...');
 
 try {
-  // Rename ja.html to ja.html (it should already be correctly named)
-  if (fs.existsSync(path.join(distDir, 'ja.html'))) {
-    console.log('Japanese HTML file is ready');
+  // Copy the generated files to the correct names for Netlify redirects
+  if (fs.existsSync(path.join(distDir, 'index-ja.html'))) {
+    // Copy index-ja.html to index.html as fallback
+    fs.copyFileSync(
+      path.join(distDir, 'index-ja.html'),
+      path.join(distDir, 'index.html')
+    );
+    console.log('Created index.html from Japanese version');
   }
   
-  // Rename en.html to en.html (it should already be correctly named)
-  if (fs.existsSync(path.join(distDir, 'en.html'))) {
-    console.log('English HTML file is ready');
+  if (fs.existsSync(path.join(distDir, 'index-en.html'))) {
+    console.log('English HTML file is ready at index-en.html');
   }
   
-  // Also keep index.html as a fallback
-  if (fs.existsSync(path.join(distDir, 'index.html'))) {
-    console.log('Main index.html is ready');
-  }
+  // List all files in dist for debugging
+  const files = fs.readdirSync(distDir);
+  console.log('Files in dist directory:', files);
   
-  console.log('Build complete! Language-specific HTML files are ready.');
+  console.log('Build complete! Language-specific HTML files are ready for Netlify.');
 } catch (error) {
   console.error('Error during post-build process:', error);
   process.exit(1);

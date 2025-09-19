@@ -1,16 +1,16 @@
-# English version
+# English version - serve static HTML for crawlers
 [[redirects]]
   from = "/en"
-  to = "/en.html"
+  to = "/index-en.html"
   status = 200
 
 [[redirects]]
   from = "/en/*"
-  to = "/en.html"
+  to = "/index-en.html"
   status = 200
 
-# Japanese version (default)
+# Japanese version (default) - serve static HTML for crawlers
 [[redirects]]
   from = "/*"
-  to = "/ja.html"
+  to = "/index-ja.html"
   status = 200
