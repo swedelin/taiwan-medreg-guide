@@ -1,4 +1,16 @@
+# English version
+[[redirects]]
+  from = "/en"
+  to = "/en.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/*"
+  to = "/en.html"
+  status = 200
+
+# Japanese version (default)
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/ja.html"
   status = 200
