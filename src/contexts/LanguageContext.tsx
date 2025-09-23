@@ -144,7 +144,14 @@ const translations = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('ja');
+  const getInitialLanguage = (): Language => {
+    if (typeof window !== 'undefined') {
+      return window.location.pathname.startsWith('/en') ? 'en' : 'ja';
+    }
+    return 'ja';
+  };
+  
+  const [language, setLanguage] = useState<Language>(getInitialLanguage());
 
   const t = (key: string): string => {
     return translations[language][key as keyof typeof translations[typeof language]] || key;
