@@ -135,7 +135,7 @@ const translations = {
     // FAQ
     faqTitle: 'FAQ about Medical Device Registration in Taiwan',
     faqQ1: 'What procedures are required to sell medical devices in Taiwan?',
-    faqA1: 'To sell medical devices in the Taiwan market, you must apply for manufacturing and marketing approval from the Taiwan Food and Drug Administration (TFDA). For medical devices classified as high-risk, additional submissions such as technical documentation, test data, and clinical data may be required. Foreign manufacturers must also designate a Taiwan Agent within Taiwan. The Taiwan Agent manages the medical device registration procedures and serves as the liaison with TFDA.',
+    faqA1: 'According to Medical Devices Act, to sell medical devices in the Taiwan market, you must apply for manufacturing and marketing approval from the Taiwan Food and Drug Administration (TFDA). For medical devices classified as high-risk, additional submissions such as technical documentation, test data, and clinical data may be required. Foreign manufacturers must also designate a Taiwan Agent within Taiwan. The Taiwan Agent manages the medical device registration procedures and serves as the liaison with TFDA.',
     faqQ2: 'What is QSD?',
     faqA2: 'QSD stands for "Quality System Documentation for Imported Medical Devices." This is a system that reviews, based on documentation, whether the quality management system implemented by foreign manufacturers for medical devices imported into Taiwan complies with Taiwan\'s GMP (Good Manufacturing Practice) standards. QSD is one of the review processes established by the Taiwan government to ensure the quality of imported medical devices and is an important requirement during registration.',
   }
