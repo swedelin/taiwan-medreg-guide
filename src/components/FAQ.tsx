@@ -26,12 +26,21 @@ const FAQ = () => {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-2" className="border-0">
+              <AccordionItem value="item-2" className="border-b border-medical-blue/20">
                 <AccordionTrigger className="text-left text-lg font-semibold text-foreground hover:text-medical-blue">
                   {t('faqQ2')}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground text-base leading-relaxed pt-4">
                   {t('faqA2')}
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3" className="border-0">
+                <AccordionTrigger className="text-left text-lg font-semibold text-foreground hover:text-medical-blue">
+                  {t('faqQ3')}
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-base leading-relaxed pt-4 whitespace-pre-line">
+                  {t('faqA3')}
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
