@@ -1,6 +1,4 @@
-import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import LanguageToggle from "./LanguageToggle";
 
 const Header = () => {
   const { t } = useLanguage();
@@ -15,25 +13,20 @@ const Header = () => {
           </div>
         </div>
         
-        <div className="flex items-center gap-4">
-          <LanguageToggle />
-          
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-foreground hover:text-medical-blue transition-colors">
-              {t('services')}
-            </a>
-            <a href="#process" className="text-foreground hover:text-medical-blue transition-colors">
-              {t('process')}
-            </a>
-            <a href="#contact" className="text-foreground hover:text-medical-blue transition-colors">
-              {t('contact')}
-            </a>
-            <a href="https://www.linkedin.com/company/regiestar/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-medical-blue transition-colors">
-              {t('linkedin')}
-            </a>
-          </nav>
-          
-        </div>
+        <nav className="flex items-center space-x-8">
+          <a href="#services" className="text-foreground hover:text-medical-blue transition-colors">
+            {t('services')}
+          </a>
+          <a href="#process" className="text-foreground hover:text-medical-blue transition-colors">
+            {t('process')}
+          </a>
+          <a href="#contact" className="text-foreground hover:text-medical-blue transition-colors">
+            {t('contact')}
+          </a>
+          <a href="https://www.linkedin.com/company/regiestar/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-medical-blue transition-colors">
+            {t('linkedin')}
+          </a>
+        </nav>
       </div>
     </header>
   );
