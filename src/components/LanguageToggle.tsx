@@ -7,7 +7,7 @@ const LanguageToggle = () => {
 
   return (
     <div className="flex items-center gap-1 bg-white/10 backdrop-blur-sm rounded-md p-1">
-      <Link to="/">
+      <Link to="/jp">
         <Button
           variant={language === 'ja' ? 'medical' : 'ghost'}
           size="sm"
@@ -20,7 +20,7 @@ const LanguageToggle = () => {
           日本語
         </Button>
       </Link>
-      <Link to="/en">
+      <Link to="/">
         <Button
           variant={language === 'en' ? 'medical' : 'ghost'}
           size="sm"

@@ -11,13 +11,13 @@ const distDir = path.resolve(__dirname, '../dist');
 console.log('Setting up language-specific HTML files for Netlify...');
 
 try {
-  // Copy the main index.html to index-ja.html if it doesn't exist
-  if (!fs.existsSync(path.join(distDir, 'index-ja.html')) && fs.existsSync(path.join(distDir, 'index.html'))) {
+  // Copy the main index.html to index-en.html if it doesn't exist
+  if (!fs.existsSync(path.join(distDir, 'index-en.html')) && fs.existsSync(path.join(distDir, 'index.html'))) {
     fs.copyFileSync(
       path.join(distDir, 'index.html'),
-      path.join(distDir, 'index-ja.html')
+      path.join(distDir, 'index-en.html')
     );
-    console.log('Created index-ja.html from main index.html');
+    console.log('Created index-en.html from main index.html');
   }
   
   // List all files in dist for debugging

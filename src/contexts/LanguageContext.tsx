@@ -148,9 +148,9 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const getInitialLanguage = (): Language => {
     if (typeof window !== 'undefined') {
-      return window.location.pathname.startsWith('/en') ? 'en' : 'ja';
+      return window.location.pathname.startsWith('/jp') ? 'ja' : 'en';
     }
-    return 'ja';
+    return 'en';
   };
   
   const [language, setLanguage] = useState<Language>(getInitialLanguage());

@@ -24,8 +24,8 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
-        'index-ja': path.resolve(__dirname, 'index-ja.html'),
         'index-en': path.resolve(__dirname, 'index-en.html'),
+        'index-ja': path.resolve(__dirname, 'index-ja.html'),
       },
     },
   },
